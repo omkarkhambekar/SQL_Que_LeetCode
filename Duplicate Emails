@@ -1,0 +1,21 @@
+Scaler Question
+
+question : - Write an SQL query to report all the duplicate emails.
+
+Return the result table in any order.
+
+Table: Person
+
+id is the primary key column for this table.
+Each row of this table contains an email.
+
+Example:
+
+Person Table:
+
+Output:
+
+solution : =
+SELECT email
+FROM Person 
+GROUP BY email HAVING COUNT(email)>1
