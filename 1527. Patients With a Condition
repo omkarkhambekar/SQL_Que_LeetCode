@@ -1,0 +1,6 @@
+Question : https://leetcode.com/problems/patients-with-a-condition/description/
+Solution : - 
+
+select *
+from Patients
+where conditions like '% DIAB1%' OR conditions like 'DIAB1%';
