@@ -1,0 +1,9 @@
+https://leetcode.com/problems/rising-temperature/description/
+
+select a.id   
+from weather a, weather b   
+where  datediff(a.recordDate,b.recordDate)= 1 AND a.temperature > b.temperature
+
+-- getting id from tables
+-- this function acts as self join
+-- with datediff function check both a and b table have 1 day difference and check -- -- previous temperacture is greater than curr temperacture
